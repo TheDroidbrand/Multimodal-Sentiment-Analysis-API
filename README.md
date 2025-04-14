@@ -88,7 +88,8 @@ If you run into any issues, feel free to reach out or drop an issue in the GitHu
 
 
 
-**🚀 Running the FastAPI Backend Locally (Mac)**
+
+#**🚀 Running the FastAPI Backend Locally (Mac)**
 This guide helps you set up and run the backend on your Mac and access the interactive API docs.
 
 📦 Prerequisites
@@ -105,60 +106,36 @@ Follow these steps to get the backend running smoothly.
 
 1. Clone the Repository
 Clone the backend repository to your local machine:
-
-bash
-Copy
-Edit
 git clone https://github.com/your-username/sentiment-analyzer.git
 cd sentiment-analyzer/backend
-2. Set Up a Virtual Environment (Recommended)
-It’s a good practice to use a virtual environment for your project to keep dependencies isolated. Run these commands to create and activate one:
 
-bash
-Copy
-Edit
-# Create virtual environment
+3. Set Up a Virtual Environment (Recommended)
+It’s a good practice to use a virtual environment for your project to keep dependencies isolated. Run these commands to create and activate one:
+Create virtual environment
 python3 -m venv venv
 
-# Activate virtual environment
+ Activate virtual environment
 source venv/bin/activate
 You’ll know the virtual environment is active when the prompt changes to include (venv).
 
 3. Install Dependencies
 Now, install all the required dependencies (including TensorFlow and others you mentioned):
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
-If the requirements.txt file doesn't exist, you can install the dependencies manually. Here's the basic list including TensorFlow, FastAPI, and other necessary packages:
 
-bash
-Copy
-Edit
+If the requirements.txt file doesn't exist, you can install the dependencies manually. Here's the basic list including TensorFlow, FastAPI, and other necessary packages:
 pip install fastapi uvicorn tensorflow pydantic
+
 🛠️ Common Missing Dependencies
 If you have additional dependencies that were needed (e.g., for audio or visual analysis), you can manually add them to the requirements.txt. Some common ones might be:
-
-bash
-Copy
-Edit
 pip install torch librosa opencv-python
 Make sure that you have all the required dependencies listed in your requirements.txt or installed via pip.
 
 4. Run the FastAPI Server
 Start the server with the following command:
-
-bash
-Copy
-Edit
 uvicorn main:app --reload
 This will launch the server at:
-
-cpp
-Copy
-Edit
 http://127.0.0.1:8000
+
 📄 View the Docs
 Once the server is running, you can view the interactive API documentation in your browser:
 
@@ -175,20 +152,10 @@ Press Ctrl + C in your terminal to stop the server when you're done.
 
 ⚠️ Troubleshooting Missing Dependencies
 If you encounter issues like missing TensorFlow or other dependencies, simply run:
-
-bash
-Copy
-Edit
 pip install tensorflow
+
 For audio-related issues (e.g., librosa), install it with:
-
-bash
-Copy
-Edit
 pip install librosa
-For visual analysis, you might need:
 
-bash
-Copy
-Edit
+For visual analysis, you might need:
 pip install opencv-python
