@@ -84,6 +84,10 @@ The backend is now running and ready to connect to the frontend or be tested usi
 If you run into any issues, feel free to reach out or drop an issue in the GitHub repo.
 
 
+
+
+
+
 **🚀 Running the FastAPI Backend Locally (Mac)**
 This guide helps you set up and run the backend on your Mac and access the interactive API docs.
 
